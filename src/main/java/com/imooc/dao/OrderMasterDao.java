@@ -8,12 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface OrderMasterDao extends JpaRepository<OrderMaster, String> {
 
-    /**
-     * 按照买家的Openid分页查询订单
-     *
-     * @param buyerOpenid 微信授权唯一标识符
-     * @param pageable
-     * @return
-     */
-    Page<OrderMaster> findByBuyerOpenid(String buyerOpenid, Pageable pageable);
+
 }
